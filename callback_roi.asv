@@ -1,0 +1,12 @@
+       
+function callback_roi(source,event,data)
+    val = source.Value; 
+    if val==1 
+        sw_x = 1;
+        sw_z = 0; 
+    elseif va,l==2 
+        sw_z = 1; 
+        sw_x = 0; 
+    end
+    src.UserData = [sw_x , sw_z];
+end 
